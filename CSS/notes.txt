@@ -37,3 +37,27 @@ px (pixels) most commonly used but not recommended for responsive websites
 
 font-family
 https://www.cssfontstack.com/
+
+CSS selectors:
+
+Unverisal selector = *
+
+* {
+    color: black;
+}
+
+Not very commonly used
+
+Element selector: h1, div, etc.
+
+h1 {
+    background-color: blue;
+}
+
+can combine multiple elements with a comma
+
+h1, h2 {
+    color: green;
+}
+
+The ID selector #
