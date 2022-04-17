@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Forms</title>
 </head>
+
 <body>
-    
+    <h1>Basic Registration Form</h1>
+    <form>
+        <div>
+            <label for="first">First Name</label>
+            <input type="text" name="firstname" id="first" required>
+            <label for="last">Last Name</label>
+            <input type="text" name="lastname" id="last" required>
+        </div>
+        <p>Select Options</p>
+        <div>
+            <input type="radio" name="sizes" id="small">
+            <label for="small">Small</label> <br>
+            <input type="radio" name="sizes" id="medium">
+            <label for="medium">Medium</label> <br>
+            <input type="radio" name="sizes" id="large">
+            <label for="large">Large</label> <br>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <br>
+        <div>
+            <button>Register</button>
+        </div>
+    </form>
 </body>
+
 </html>
