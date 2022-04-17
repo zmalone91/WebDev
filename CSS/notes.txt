@@ -1,0 +1,39 @@
+Almost everything in CSS follows the basic pattern:
+
+selector {
+    property: value;
+}
+
+ex:
+
+h1 {
+    color: purple;
+}
+
+Inline CSS is not typically recommended
+
+<link> CSS to html page in the head element
+
+<head>
+    <title>Demo HTML</title>
+    <link rel="stylesheet" href="my_styles.css">
+</head>
+
+Colors:
+    Colors by name
+    by RGB values
+    Hexadecimal
+    https://imagecolorpicker.com/en
+
+Common text properties:
+text-align
+font-weight
+text-decoration
+line-height
+letter-spacing
+
+font-size
+px (pixels) most commonly used but not recommended for responsive websites
+
+font-family
+https://www.cssfontstack.com/
