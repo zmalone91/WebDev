@@ -40,7 +40,7 @@ https://www.cssfontstack.com/
 
 CSS selectors:
 
-Unverisal selector = *
+The Unverisal selector using *
 
 * {
     color: black;
@@ -48,7 +48,7 @@ Unverisal selector = *
 
 Not very commonly used
 
-Element selector: h1, div, etc.
+The Element selector: h1, div, etc.
 
 h1 {
     background-color: blue;
@@ -60,4 +60,111 @@ h1, h2 {
     color: green;
 }
 
-The ID selector #
+The ID selector using # to select a specific element ID
+
+#password {
+    background-color:red;
+    color: white;
+}
+
+The Class selector using . to edit all elements belonging to a specific class
+
+<span class='tag'>
+
+.tag {
+    color: green;
+}
+
+The Descendant selector
+
+li a {
+    color: green;
+}
+
+Modifies 'a' elements inside of 'li' elements but does not modify 'li' elements
+This is every 'a' in the parent 'li'
+
+Another example
+
+<header>
+    <ul>
+        <li> <a href='/home'>Home</a>
+    </ul>
+</header> 
+
+header a {
+    color: blue
+}
+
+Even though the 'a' is inside li, and ul, it is still within the header tag (parent)
+
+Adjacent selector using +
+
+modifies an element directly after another element
+
+input + button {
+    color: blue
+}
+
+Modifies the color of button(s) directly after an input
+
+
+Direct Child selector using >
+
+When an element is a direct child of a previous element
+
+The Attribute selector
+
+input[type='text] {
+    color: green;
+}
+
+a[href=]
+a[href*='google']
+a[href$='.org']
+a[class~='logo']
+
+Reference for attribute selections
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+
+Pseudo Classes
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+Pseudo Elements
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+'Cascade' the order matters for css, the latest modification will take effect
+The following css will result in a green h1
+
+h1 {
+    color: blue;
+}
+
+h1 {
+    color: green
+}
+
+Specificity
+
+Element + Element > Element
+
+header p {
+    color: blue;
+}
+
+Will supercede (within the header)
+
+p {
+    color: yellow;
+}
+
+ID > Class > Element selector
+
+Specificity Calculator
+https://specificity.keegan.st/
+
+Inline styles  are most specific, but generally should be avoided to avoid confusion
+
+'Importance' !important will override all other specificity
+
+CSS Inheritance
